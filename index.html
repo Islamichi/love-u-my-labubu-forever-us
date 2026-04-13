@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For My labubu/Tikanda Slama Lana Aya ❤️</title>
+  <style>
+    :root {
+      --bg-color: #ffe6f0;
+      --text-color: #333;
+      --accent-color: #ff4d88;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: var(--bg-color);
+      color: var(--text-color);
+      text-align: center;
+    }
+
+    header {
+      padding: 40px 20px;
+      background: var(--accent-color);
+      color: white;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    .container {
+      padding: 20px;
+    }
+
+    .gallery img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      margin: 10px;
+      border-radius: 15px;
+      transition: transform 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.1);
+    }
+
+    .btn {
+      padding: 10px 20px;
+      margin: 10px;
+      border: none;
+      border-radius: 10px;
+      background: var(--accent-color);
+      color: white;
+      cursor: pointer;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    footer {
+      margin-top: 40px;
+      padding: 20px;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>To My Beautiful Aya ❤️</h1>
+  <p>This little website is made just for you ✨</p>
+</header>
+
+<div class="container">
+  <h2> Dont Be Shy 🤭💝📸</h2>
+  <div class="gallery">
+    <!-- Replace with your images -->
+    <img src="love.jpg" alt="Our First fake heart together 1">
+    <img src="love.jpg1" alt="3lah t9t3tlk :(">
+    <img src="love.jpg2" alt="my fav picture of u Then & now">
+  </div>
+
+  <h2>Options 💖</h2>
+  <button class="btn" onclick="showMessage()">Read a Love Message</button>
+  <button class="btn" onclick="changeTheme()">Change Theme</button>
+
+  <p id="loveMessage" class="hidden">Love You More than you can think Of My Baby, its always gonna be you or nothing, hope we get somewhere peace for us and end in halal way Inshallah ❤️</p>
+</div>
+
+<footer>
+  Ur Man. Tikando/Islam 💕
+</footer>
+
+<script>
+  function showMessage() {
+    const msg = document.getElementById('loveMessage');
+    msg.classList.toggle('hidden');
+  }
+
+  function changeTheme() {
+    const root = document.documentElement;
+    const themes = [
+      { bg: '#ffe6f0', accent: '#ff4d88' },
+      { bg: '#e6f7ff', accent: '#3399ff' },
+      { bg: '#e6ffe6', accent: '#33cc66' },
+      { bg: '#fff0e6', accent: '#ff944d' }
+    ];
+
+    const theme = themes[Math.floor(Math.random() * themes.length)];
+    root.style.setProperty('--bg-color', theme.bg);
+    root.style.setProperty('--accent-color', theme.accent);
+  }
+</script>
+
+</body>
+</html>
